@@ -7,6 +7,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.offset:before {
+  display: block;
+  content: "";
+  height: 6rem;
+}
+
 .navbar {
   text-transform: uppercase;
   font-size: 14px;
@@ -87,8 +93,9 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
 **/
 #about .btn {
   border: 2px solid #ff9248;
-  width: 40%;
-  padding: 15px 22px;
+  /* inline block to fit content */
+  display: inline-block;
+  padding: 15px 15px;
   background: #ff9248;
   border-radius: 5px;
   margin-top: 10px;
@@ -107,3 +114,109 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
   cursor: pointer;
 }
 /* About me END*/
+
+/* Contact */
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f6c8a9;
+}
+
+.sec1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.sec1 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.sec1 .btn:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+/* Contact End */
+
+/* Media Query */
+@media screen and (max-width: 767px) {
+  /* tablet */
+  .navbar {
+    letter-spacing: 0.1rem;
+    padding: 10px 0;
+  }
+
+  .heading-content {
+    position: absolute;
+    top: 15%;
+  }
+
+  .heading-content h5 {
+    font-size: 3em;
+  }
+
+  .heading-content h1 {
+    font-size: 3em;
+  }
+
+  .heading-content h2 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* tablet */
+  .navbar {
+    letter-spacing: 0.05rem;
+    padding: 7px 0;
+  }
+
+  .heading-content {
+    position: absolute;
+    top: 9%;
+  }
+
+  .heading-content h5 {
+    font-size: 2em;
+  }
+
+  .heading-content h1 {
+    font-size: 2em;
+  }
+
+  .heading-content h2 {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 852) {
+  /* tablet */
+  .navbar {
+    letter-spacing: 0.1rem;
+    padding: 7px 0;
+  }
+
+  .heading-content {
+    position: absolute;
+    top: 10%;
+  }
+
+  .heading-content h5 {
+    font-size: 2em;
+  }
+
+  .heading-content h1 {
+    font-size: 2em;
+  }
+
+  .heading-content h2 {
+    font-size: 0.7em;
+  }
+}

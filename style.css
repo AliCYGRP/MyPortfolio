@@ -195,28 +195,3 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
     font-size: 0.7em;
   }
 }
-
-@media screen and (max-width: 852) {
-  /* tablet */
-  .navbar {
-    letter-spacing: 0.1rem;
-    padding: 7px 0;
-  }
-
-  .heading-content {
-    position: absolute;
-    top: 10%;
-  }
-
-  .heading-content h5 {
-    font-size: 2em;
-  }
-
-  .heading-content h1 {
-    font-size: 2em;
-  }
-
-  .heading-content h2 {
-    font-size: 0.7em;
-  }
-}

@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div>
+    <div id="home">
       <!-- Navigation Bar -->
       <nav
         class="navbar navbar-expand-md navbar-dark fixed-top"
@@ -61,6 +61,9 @@
 
       <!-- Background -->
       <div class="background">
+        <!-- Images in Bootstrap are made responsive with .img-fluid. max-width: 100%; 
+            and height: auto; are applied to the image so that it scales with the parent 
+            element. -->
         <img src="img/cover_img1.png" class="img-fluid" style="opacity: 0.9" />
       </div>
       <div class="heading-content text-center">
@@ -75,6 +78,66 @@
       </div>
       <!-- Background Ends -->
     </div>
+    <!-- About start -->
+    <!-- mt-3 = margin-top 3 pb-5 padding bottom-->
+    <div id="about" class="mt-3 mb-5">
+      <div class="about-me-heading text-center">
+        <h3 class="display-4" style="font-weight: bold">About Me</h3>
+        <!-- width 50 m=margin x means both left right  -->
+        <hr class="w-50 mx-auto" />
+      </div>
+      <!-- References: https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp -->
+      <div class="row">
+        <!-- lg (for laptops and desktops - screens equal to or greater than 1200px wide) -->
+        <!-- md (for small laptops - screens equal to or greater than 992px wide) -->
+        <!-- for mobile screen will take 12 -->
+        <div class="col-lg-4 col-md-4 col-12">
+          <img
+            src="/img/ali_img-up.jpg"
+            class="img-fluid"
+            style="padding-left: 2rem"
+          />
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <p>
+            My name is Syed Ali Hasan, a final year student pursuing B.Tech in
+            Information Technology from Bhagwan Parshuram Institute of
+            Technology, (GGSIPU), Rohini. I have experience in software
+            development with C++ and Android by working on various personal and
+            commercial projects throughout my journey. I have worked with Boost
+            C++ (finest open-source C++ libraries) as a part of Google Summer of
+            Code 2020 to develop their Boost.Astronomy Library, with GAIL (Gas
+            Authority India Limited), Aztek Solutions, Noida, and IOSD
+            (International Organisation of Software Developers) to develop
+            Android Application based solutions that majorly used Java, XML,
+            SQL, and various Android Components and practices. Besides this, I
+            have sound knowledge of Data Structures and Algorithms. I also love
+            interacting and brainstorming on creative ideas. My resume, here,
+            expands on my experiences and campus involvement.
+          </p>
+
+          <button class="btn w-50">
+            <a
+              href="https://drive.google.com/file/d/1VRaR4-du_U1CRpCvtdTrIKPu8xW1BUjS/view?usp=sharing"
+              >Download Resume</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- About END -->
+
+    <!-- Projects start -->
+    <div id="project" class=""></div>
+    <!-- Projects END -->
+
+    <!-- education start -->
+    <div id="education" class=""></div>
+    <!-- education END -->
+
+    <!-- contact start -->
+    <div id="education" class=""></div>
+    <!-- contact END -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>

@@ -74,3 +74,36 @@ body {
 }
 
 /* Background End */
+
+/* About me */
+/* Bootstrap follows 12 standard columns */
+/**
+References
+https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
+    We have BootStrap Grid Classes
+    - col-lg-6
+    - col-md-12
+    - col-12
+**/
+#about .btn {
+  border: 2px solid #ff9248;
+  width: 40%;
+  padding: 15px 22px;
+  background: #ff9248;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#about .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#about .btn:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+/* About me END*/

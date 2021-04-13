@@ -148,6 +148,12 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
 /* Media Query */
 @media screen and (max-width: 767px) {
   /* tablet */
+  .offset:before {
+    display: block;
+    content: "";
+    height: 0rem;
+  }
+
   .navbar {
     letter-spacing: 0.1rem;
     padding: 10px 0;
@@ -173,6 +179,11 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
 
 @media screen and (max-width: 479px) {
   /* tablet */
+  .offset:before {
+    display: block;
+    content: "";
+    height: 0rem;
+  }
   .navbar {
     letter-spacing: 0.05rem;
     padding: 7px 0;

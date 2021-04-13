@@ -195,3 +195,12 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
     font-size: 0.7em;
   }
 }
+
+.talk {
+  border: 2px solid #48adff;
+  /* inline block to fit content */
+  display: inline-block;
+  background: #48adff;
+  border-radius: 5px;
+  margin-top: 10px;
+}

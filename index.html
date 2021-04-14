@@ -348,17 +348,29 @@ their maintenance.
     <!-- education END -->
 
     <!-- contact start -->
-    <section id="contact" class="offset sec1 container-fluid mt-3 pb-5">
-        <h2 class="mt-3">CONTACT</h2>
-        <p>It is always good to make new friends. Let's Connect!</p>
-        <button class="btn talk w-30">
-          <a
-            href="mailto:alihasan9922@gmail.com" style="color: white;"
-            >Let's Talk</a
-          >
-        </button>
+    <section id="contact" class="offset sec1 pb-5">
+        <h2>CONTACT ME</h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your Name</label>
+            <input type="text" class="form-control" id="formName" placeholder="And you are?">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your Email</label>
+            <input type="text" class="form-control" id="formEmail" placeholder="What's your Email ID?">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your Message</label>
+            <textarea class="form-control" id="formMessage"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-3" onclick="submitForm()">Send</button>
+        </form>
     </section>
     <!-- contact END -->
+
     <footer class="bg-light text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
@@ -420,6 +432,7 @@ their maintenance.
         <!-- Copyright -->
       </footer>
 
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="./script/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
